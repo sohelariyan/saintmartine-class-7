@@ -1,0 +1,198 @@
+/* *************
+global css
+************** */
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 1140px !important;
+
+}
+
+.body{
+	font-family: 'Open Sans', sans-serif;
+}
+.orange-color{
+	color: #fe5c24;
+
+}
+
+/* *************
+header css
+************** */
+.topbar{
+	background-color: #eaefff;
+	padding:16px 0;
+}
+.topbar a{
+	    color: #0c3e72;
+}
+.book-now{
+	background: #fe5c24;
+	border: none;
+	padding: 14px 28px;
+	font-size: 16px;
+	color: white;
+	transition: 0.5s;
+
+}
+
+.book-now:hover{
+	background-color: #2493e0;
+	transition: 0.5s;
+}
+
+.main-menu ul li a{
+	color: #0c3e72;
+    font-size: 16px;
+    padding: 38px 18px;
+}
+
+/* *************
+banner css
+************** */
+.banner{
+	width: 100%;
+	background: url('../img/bg-cover.png');
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+
+}
+
+.banner-text{
+	display: flex;
+	text-align: center;
+	align-items:center;
+	height: 100vh;
+	justify-content: center;
+}
+
+.banner-text h1{
+	font-size: 120px;
+	font-weight: 600;
+	color: white;
+}
+.banner-text p{
+	font-size: 24px;
+	font-weight: 400;
+	color: white;
+}
+.banner-text button{
+	margin-top: 30px;
+	background-color: #2493e0;
+	padding: 23px 79px;
+	color: white;
+	border: none;
+	font-size: 16px;
+	transition: 0.4s;
+}
+.banner-text button:hover{
+	background:  #fe5c24;
+	transition: 0.4s;
+	
+}
+
+
+/* *************
+ search css
+************** */
+.search{
+	margin-top: -80px;
+}
+.tab-menu{
+	background: white;
+}
+.tab-menu ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 25px 30px 25px 0;
+}
+.tab-item{
+	box-shadow: 0 10px 40px 0 rgb(221 221 221/30%);
+	padding:40px ;
+	background: white;
+}
+
+.form-field{
+	
+	padding: 14px 16px;
+	color: black;
+}
+.W-21{
+	width: 21%;
+	margin-right: 8px;
+}
+.date-box{
+	position: relative;
+}
+.date-box i{
+	position: absolute;
+	right:10px;
+	top: 20px;
+}
+
+/* *************
+top place css
+************** */
+
+
+.tv-place{
+	width: 100%;
+	padding: 120px 0px;
+}
+.section-titel{
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.section-titel h2{
+	font-size: 46px;
+	color: #0c3e72;
+	font-weight: 600;
+	margin-bottom: 26px;
+}
+
+.list-item{
+	position: relative ;
+
+}
+.list-content{
+	position: absolute;
+	left: 40px;
+	bottom: 40px;
+	opacity: 0;
+	transition: 0.5s;
+}
+.list-item::before{
+	content: '';
+	background-color: #0c3e72;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	transition: 0.4s;
+}
+.list-item:hover::before{
+	opacity: 0.65;
+	transition: 0.4s;
+}
+.list-item:hover .list-content{
+	opacity: 1;
+	transition: 0.5s;
+	transform: translateY(-20px);
+}
